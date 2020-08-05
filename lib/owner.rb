@@ -70,13 +70,19 @@ class Owner
   end
 
   def sell_pets
-    pets=[Dog,Cat]
-
+    pets = dogs + cats
+    
     pets.map do |pet|
-      pet.mood="nervous"
-    end
+      pet.mood = "nervous" 
+      pet.owner = nil
+    end     
   end
 
+  def list_pets
+    "I have #{Dog.self.count} dog(s) and #{Cat.self.count} cat(s)."
+
+    # self.pets
+  end
 
 end
 #binding.pry
