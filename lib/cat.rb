@@ -1,3 +1,5 @@
+
+
 class Cat
 
   attr_accessor :owner, :mood
@@ -16,5 +18,8 @@ class Cat
     @@all
   end
 
+  
+
+  
 
 end
